@@ -115,7 +115,7 @@ volumes:
 
 Démarrer les services :
 ```bash
-docker compose up -d
+docker compose-up -d
 ```
 
 Vérifier que Traefik a bien généré le certificat :
@@ -139,7 +139,7 @@ Par défaut, 1 seul WordPress est lancé.
 Tu peux en déployer plusieurs avec la commande :
 
 ```bash
-docker compose up --scale wordpress=2 -d
+docker compose-up --scale wordpress=2 -d
 ```
 
 👉 Grâce au volume partagé `wordpress_data`, tous les containers WordPress utilisent **le même contenu** (un seul site web).  
